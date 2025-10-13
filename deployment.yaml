@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: myapp: 1.0
-        imagePullPolicy: Never
+        image: rajendra3/myapp:1.0       # ✅ full repo + tag
+        imagePullPolicy: IfNotPresent     # ✅ pull only if missing
         ports:
         - containerPort: 80
+
